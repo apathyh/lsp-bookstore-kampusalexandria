@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout - Kampus Alexandria</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-3">
+<nav class="d-flex flex-wrap gap-3 align-items-center border-bottom pb-2 mb-3">
+  <b class="me-auto">Kampus Alexandria</b>
+  <a href="./index.html">Katalog</a>
+  <a href="./aboutus.html">Tentang Kami</a>
+  <a href="./keranjang.html">Keranjang (3)</a>
+      <a href="./pesanan_saya.html">Pesanan Saya</a>
+    <a href="./profil.html">Ganti Password</a>
+    <a href="./index.html">Logout (Budi Santoso)</a>
+  </nav>
+<h1>Checkout</h1>
+<p>Total belanja: <b>Rp 268.000</b> (2 judul)</p>
+<form action="sukses.html" method="get" style="max-width:500px">  <label>Nama penerima</label><input name="nama" value="Budi Santoso" class="form-control mb-2" required>
+  <label>No. telepon / WA</label><input name="telepon" value="081234567890" class="form-control mb-2" required>
+  <label>Alamat lengkap</label><textarea name="alamat" class="form-control mb-2" required>Jl. Mawar No. 12, Tegal</textarea>
+  <p class="mb-1"><b>Metode pembayaran</b></p>
+      <label class="d-block"><input type="radio" name="metode" value="cod" checked> COD (bayar di tempat saat barang tiba)</label>
+      <label class="d-block"><input type="radio" name="metode" value="transfer" > Transfer (konfirmasi ke admin lewat WhatsApp)</label>
+    <button class="btn btn-primary mt-3">Buat pesanan</button>
+  <a class="btn btn-secondary mt-3" href="keranjang.html">Kembali</a>
+</form>
+<hr>
+<small>&copy; 2026 Kampus Alexandria</small>
+</body>
+</html>
